@@ -5,9 +5,6 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
-print("ENV 파일 존재:", (Path(__file__).resolve().parent / ".env").exists())
-print("ENV 파일 경로:", Path(__file__).resolve().parent / ".env")
-print("ENV 파일 내용:", repr(Path(__file__).resolve().parent.joinpath(".env").read_text(encoding="utf-8")))
 app = Flask(__name__)
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
