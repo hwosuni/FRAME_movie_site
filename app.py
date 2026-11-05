@@ -35,7 +35,7 @@ app = Flask(__name__)
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-6.1-sol")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-6-astra")
 
 GENRE_IDS = {
     "액션": 28,
