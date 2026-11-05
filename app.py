@@ -4,7 +4,7 @@ from pathlib import Path
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).resolve().parent / ".env", override=True)
+load_dotenv(override=True)
 print("ENV 파일 존재:", (Path(__file__).resolve().parent / ".env").exists())
 print("ENV 파일 경로:", Path(__file__).resolve().parent / ".env")
 print("ENV 파일 내용:", repr(Path(__file__).resolve().parent.joinpath(".env").read_text(encoding="utf-8")))
